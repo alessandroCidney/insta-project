@@ -1,0 +1,9 @@
+:root {
+    --color-gray: rgb(243, 243, 243);
+    --color-gray-two: rgb(160, 160, 160);
+    --color-light-gray: lightgray;
+    --color-white: #ffffff;
+    --color-black: black;
+    --color-red: crimson;
+    --color-blue: #0095f6;
+}

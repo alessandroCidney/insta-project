@@ -1,0 +1,217 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-gray);
+}
+
+.instagram-popup-div { /* Aparecerá quando a página for carregada */
+    position: absolute;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+    min-height: 100vh;
+}
+
+.instagram-popup-div-remove {
+    display: none;
+}
+
+.instagram-popup-div-show {
+    display: flex;
+}
+
+.instagram-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    box-shadow: 1px 1px 5px var(--color-black);
+    width: 50%;
+    height: 30%;
+    padding: 50px;
+    border-radius: 10px;
+
+}
+
+.instagram-popup h2 {
+    font-weight: bolder;
+    font-size: 15pt;
+    color:var(--color-red);
+}
+
+.instagram-popup p {
+    text-align: justify;
+    margin: 20px 5px;
+}
+
+.close-popup {
+    background-color: #ffffff;
+    color: var(--color-black);
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    margin: 20px auto;
+
+    transition: all 0.2s linear;
+}
+
+.close-popup:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-weight: bolder;
+}
+
+.instagram-interface {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phones img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.instagram-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid var(--color-light-gray);
+}
+
+.instagram-group:nth-child(1) { /*O filho nº1, ou seja, o que tem a foto*/
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.instagram-profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instagram-profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: var(--color-blue);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: var(--color-blue);
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: var(--color-gray-two);
+}
+
+.blue-link {
+    color: var(--color-blue);
+}
+
+.instagram-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Horizontalmente*/
+    justify-content: center; /*Verticalmente*/
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /* O mesmo espaço nos lados e no meio */
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(images/instagram-apple-button.png);
+}
+
+.app-download:nth-child(2) {
+    background-image: url(images/instagram-googleplay-button.png);
+}
+
+@media (max-width: 1024px) and (min-width: 760px){
+
+    .instagram-interface {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    body {
+        background-color: var(--color-white);
+    }
+
+    .instagram-interface {
+        width: 90%;
+    }
+
+    .instagram-phones {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .instagram-group {
+        border: 1px solid transparent;
+    }
+
+    .instagram-popup {
+        width: 70%;
+    }
+
+}
